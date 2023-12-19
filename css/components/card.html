@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            width: 400px;
+            border: 1px solid #ccc;
+            margin: 15px;
+            float: left;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card .card-body {
+            padding: 15px;
+        }
+
+        .card-body h4 {
+            margin-bottom: 15px;
+        }
+
+        .card-body a {
+            display: block;
+            padding: 10px 0;
+            text-decoration: none;
+        }
+
+        .rouded {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="../pic.PNG" alt="Picture">
+        <div class="card-body">
+            <h4>Hello World</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, reprehenderit distinctio ullam molestias
+                delectus magnam ex molestiae? Eum sit, nobis illum numquam obcaecati, cumque tempora unde deserunt
+                tempore voluptate nisi.</p>
+        </div>
+    </div>
+
+    <div class="card rouded">
+        <img class="rouded" src="../pic.PNG" alt="Picture">
+        <div class="card-body">
+            <h4>Hello World</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, reprehenderit distinctio ullam molestias
+                delectus magnam ex molestiae? Eum sit, nobis illum numquam obcaecati, cumque tempora unde deserunt
+                tempore voluptate nisi.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
