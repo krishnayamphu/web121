@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            border: 10px solid red;
+            width: 200px;
+            height: 300px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .cover {
+            object-fit: cover;
+        }
+
+        .contain {
+            object-fit: contain;
+            width: 300px;
+            height: 200px;
+        }
+
+        .position-left {
+            object-fit: contain;
+            object-position: left;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="../pic.PNG" alt="">
+    <img class="cover" src="../pic.PNG" alt="">
+    <img class="contain" src="../pic.PNG" alt="">
+    <img class="position-left" src="../pic.PNG" alt="">
+</body>
+
+</html>
