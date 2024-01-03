@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        @keyframes changeBG {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 80%;
+                transform: rotate(360deg);
+                border-radius: 50%;
+            }
+
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 15px;
+            animation-name: changeBG;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-delay: 0;
+            animation-iteration-count: infinite;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 15px;
+            position: relative;
+            animation: move 4s ease-in-out infinite alternate;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+
+
+</body>
+
+</html>
