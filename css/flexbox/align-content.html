@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .row {
+            border: 1px solid red;
+            margin: 30px;
+            display: flex;
+            height: 100px;
+            width: 500px;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            background-color: green;
+            width: 150px;
+        }
+
+        .col:nth-child(even) {
+            background-color: gold;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .flex-center {
+            align-content: center;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+
+        .space-between {
+            align-content: space-between;
+        }
+
+        .space-evenly {
+            align-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row stretch">
+        <div class="col">col 1</div>
+        <div class="col">col 2</div>
+        <div class="col">col 3</div>
+        <div class="col">col 4</div>
+    </div>
+
+    <div class="row flex-start">
+        <div class="col">col 1</div>
+        <div class="col">col 2</div>
+        <div class="col">col 3</div>
+        <div class="col">col 4</div>
+    </div>
+
+    <div class="row flex-center">
+        <div class="col">col 1</div>
+        <div class="col">col 2</div>
+        <div class="col">col 3</div>
+        <div class="col">col 4</div>
+    </div>
+
+    <div class="row flex-end">
+        <div class="col">col 1</div>
+        <div class="col">col 2</div>
+        <div class="col">col 3</div>
+        <div class="col">col 4</div>
+    </div>
+
+    <div class="row space-around">
+        <div class="col">col 1</div>
+        <div class="col">col 2</div>
+        <div class="col">col 3</div>
+        <div class="col">col 4</div>
+    </div>
+
+    <div class="row space-between">
+        <div class="col">col 1</div>
+        <div class="col">col 2</div>
+        <div class="col">col 3</div>
+        <div class="col">col 4</div>
+    </div>
+
+    <div class="row space-evenly">
+        <div class="col">col 1</div>
+        <div class="col">col 2</div>
+        <div class="col">col 3</div>
+        <div class="col">col 4</div>
+    </div>
+</body>
+
+</html>
