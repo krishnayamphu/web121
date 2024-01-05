@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .row {
+            border: 1px solid red;
+            margin: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            background-color: green;
+        }
+
+        .col:nth-child(even) {
+            background-color: gold;
+        }
+
+        .grow-0 {
+            flex-grow: 0;
+        }
+
+        .grow-1 {
+            flex-grow: 1;
+        }
+
+        .grow-2 {
+            flex-grow: 2;
+        }
+
+        .grow-3 {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col grow-0">col 1</div>
+        <div class="col grow-0">col 2</div>
+        <div class="col grow-0">col 3</div>
+    </div>
+
+    <div class="row">
+        <div class="col grow-1">col 1</div>
+        <div class="col grow-0">col 2</div>
+        <div class="col grow-0">col 3</div>
+    </div>
+
+    <div class="row">
+        <div class="col grow-1">col 1</div>
+        <div class="col grow-1">col 2</div>
+        <div class="col grow-0">col 3</div>
+    </div>
+
+    <div class="row">
+        <div class="col grow-1">col 1</div>
+        <div class="col grow-1">col 2</div>
+        <div class="col grow-1">col 3</div>
+    </div>
+
+    <div class="row">
+        <div class="col grow-1">col 1</div>
+        <div class="col grow-2">col 2</div>
+        <div class="col grow-1">col 3</div>
+    </div>
+
+    <div class="row">
+        <div class="col grow-1">col 1</div>
+        <div class="col grow-3">col 2</div>
+        <div class="col grow-1">col 3</div>
+    </div>
+
+    <div class="row">
+        <div class="col grow-1">col 1</div>
+        <div class="col grow-1">col 2</div>
+    </div>
+    <div class="row">
+        <div class="col grow-1">col 1</div>
+        <div class="col grow-3">col 2</div>
+    </div>
+
+    <div class="row">
+        <div class="col grow-3">col 1</div>
+        <div class="col grow-1">col 2</div>
+    </div>
+</body>
+
+</html>

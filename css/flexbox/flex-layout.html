@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .row {
+            border: 1px solid red;
+            margin: 30px;
+            display: flex;
+            align-items: stretch;
+        }
+
+        .col {
+            background-color: green;
+        }
+
+        .col:nth-child(even) {
+            background-color: gold;
+        }
+
+        .grow-1 {
+            flex-grow: 1;
+        }
+
+        .grow-2 {
+            flex-grow: 2;
+        }
+
+        .grow-3 {
+            flex-grow: 3;
+        }
+
+        aside {
+            padding: 15px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col grow-2">
+            <aside>
+                <h3>Recent Updates</h3>
+                <ul>
+                    <li>List 1</li>
+                    <li>List 1</li>
+                    <li>List 1</li>
+                    <li>List 1</li>
+                </ul>
+            </aside>
+
+        </div>
+        <div class="col grow-3">
+            <article>
+                <h1>Welcome to Flexbox</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, ab molestiae. Perferendis autem quod
+                    voluptatum assumenda, alias nesciunt deleniti, modi blanditiis unde maiores in animi. Dolore
+                    consectetur
+                    quasi sint eligendi.</p>
+            </article>
+        </div>
+    </div>
+</body>
+
+</html>
