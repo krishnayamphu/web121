@@ -1,0 +1,14 @@
+#featured img{
+    height: 120px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+#featured .card:hover{
+    border: solid 1px green;
+    box-shadow: 0 0 5px #dedede;
+}
+#featured .fruit-veg{
+    background-image: url(../images/slide-1.jpg);
+    height: 150px;
+    object-fit: cover;
+}
