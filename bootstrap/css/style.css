@@ -1,3 +1,18 @@
+:root{
+    --primary-color:#0aad0a !important;
+    --primary-color-hover: #056a05 !important;
+}
+/*
+    formatting
+*/
+.btn-primary{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover{
+        background-color: var(--primary-color-hover);
+        border-color: var(--primary-color-hover);
+}
 #featured img{
     height: 120px;
     object-fit: cover;
@@ -8,7 +23,38 @@
     box-shadow: 0 0 5px #dedede;
 }
 #featured .fruit-veg{
-    background-image: url(../images/slide-1.jpg);
-    height: 150px;
+    background-image: url(../images/grocery-banner.png);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+#featured .grocery-banner2 {
+    background-image: url(../images/grocery-banner-2.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#popular img{
+    height: 120px;
     object-fit: cover;
+}
+#popular .card:hover{
+    border: solid 1px green;
+    box-shadow: 0 0 5px #dedede;
+}
+#popular .card:hover .card-overlay{
+    display: flex !important;
+}
+#popular .card:hover .btn-primary:hover{
+    background-color: var(--primary-color-hover);
+    border-color: var(--primary-color-hover);
+}
+
+.banner-deal{
+    background-image: url(../images/banner-deal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
