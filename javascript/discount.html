@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <script>
+        let amount = parseFloat(prompt("enter total amount:", ""));
+        let discount_rate = parseInt(prompt("enter discount rate: ", ""));
+
+        let discount = 0;
+        discount = (amount * discount_rate) / 100;
+        document.write("<p>Discount Amount: " + discount + "</p>");
+
+    </script>
+
+</body>
+
+</html>
