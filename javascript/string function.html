@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <input onkeypress="changeCase()" type="text" id="name">
+    <p id="count"></p>
+
+
+
+    <script>
+        function changeCase() {
+            let name = document.getElementById("name").value;
+            document.getElementById("name").value = name.toUpperCase();
+            document.getElementById("count").innerHTML = name.length + 1;
+        }
+    </script>
+
+</body>
+
+</html>

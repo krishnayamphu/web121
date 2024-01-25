@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <button type="button" onclick="getName()">Show</button>
+    </form>
+
+
+
+    <h1 id="title" onmouseover="setFormat()">Hello world</h1>
+    <button onclick="setFormat()">Apply format</button>
+
+
+    <script>
+        function getName() {
+            let name = document.getElementById("name").value;
+            alert(name);
+        }
+        function setFormat() {
+            document.getElementById("title").style.color = "green";
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

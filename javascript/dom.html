@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <button onclick="setColor()">Fill Background</button>
+    <button onclick="retset()">Reset</button>
+    <button onclick="setContent()">Set Content</button>
+
+    <p id="content"></p>
+    <script>
+        function setColor() {
+            document.bgColor = "red";
+        }
+        function retset() {
+            document.bgColor = "white";
+        }
+
+        function setContent() {
+            document.getElementById("content").innerHTML = "Hello World";
+        }
+
+    </script>
+
+</body>
+
+</html>
