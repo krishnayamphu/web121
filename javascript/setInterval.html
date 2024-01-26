@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+
+    <input type="text" id="t1">
+
+    <script>
+        function clock() {
+            const time = new Date();
+            let d = time.getDay() + 1; //0-6
+
+            let h = time.getHours(); //0-23
+            let m = time.getMinutes();
+            let s = time.getSeconds();
+            let ms = time.getMilliseconds();
+
+            let data = h + " : " + m + " : " + s + " : " + ms;
+            document.getElementById("t1").value = data;
+        }
+
+        setInterval("clock()", 1);
+    </script>
+
+</body>
+
+</html>
