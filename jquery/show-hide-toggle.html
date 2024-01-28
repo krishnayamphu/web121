@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            ;
+        }
+
+        p {
+            padding: 5px 0;
+            background-color: tan;
+        }
+    </style>
+
+<body>
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Toggle</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cupiditate eius doloremque tempore voluptas!
+        Consequuntur, praesentium atque placeat nisi eum sapiente dolorum aut ea architecto cupiditate eligendi corrupti
+        omnis nulla!</p>
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("p").hide(1000)
+            });
+            $("#btn2").click(function () {
+                $("p").show(1000)
+            });
+            $("#btn3").click(function () {
+                $("p").toggle(1000)
+            });
+        });
+    </script>
+
+</body>
+
+</html>
