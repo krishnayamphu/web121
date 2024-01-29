@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            ;
+        }
+
+        p {
+            padding: 5px 0;
+
+
+            background-color: tan;
+        }
+
+        .mytext {
+            padding: 15px;
+            color: rgba(166, 48, 48, 0.729);
+            background-color: antiquewhite;
+            ;
+        }
+    </style>
+
+<body>
+    <button id="btn1">Add Class</button>
+    <button id="btn2">Remove Class</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cupiditate eius doloremque tempore voluptas!
+        Consequuntur, praesentium atque placeat nisi eum sapiente dolorum aut ea architecto cupiditate eligendi corrupti
+        omnis nulla!</p>
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("p").addClass("mytext");
+            });
+            $("#btn2").click(function () {
+                $("p").removeClass("mytext");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
