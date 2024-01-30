@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin: 15px;
+        }
+
+        p {
+            padding: 15px;
+            color: green;
+        }
+    </style>
+
+<body>
+    <button id="btn1">Set Html</button>
+    <button id="btn2">Get Html</button>
+
+    <p id="mytext"></p>
+
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //set html
+            $("#btn1").click(function () {
+                $("#mytext").html("<strong>Hello</strong> World");
+            });
+
+            //get html
+            $("#btn2").click(function () {
+                let data = $("#mytext").html();
+                alert(data);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
